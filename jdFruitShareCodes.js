@@ -14,10 +14,10 @@ let FruitShareCodes = [
 // 判断github action里面是否有东东农场互助码
 if (process.env.FRUITSHARECODES) {
   if (process.env.FRUITSHARECODES.indexOf('&') > -1) {
-    console.log(`您的东东农场互助码选择的是用&隔开\n`)
+    console.log(`ff1e3ff271ba4fbc9f9d22190987fd9f@61c82397e0cf403eae5904e46a90514e@edf2baeca94e476496c6eb911a5b57b0@08eee59f433b473eb67779a0dd372ae1@bfb6f0ff95944b6ea4b6246b4bec5f69@d648bc21c62f40c1a406661b66ef664f@c041cad170774d169fa2c6af2c9ff2b8@b074877a6b864f8285d440ccc7f4aa75@1481d813072347f1af8c76a62f01642e@1a51b756f8f3473e922e68d6a412c459\n`)
     FruitShareCodes = process.env.FRUITSHARECODES.split('&');
   } else if (process.env.FRUITSHARECODES.indexOf('\n') > -1) {
-    console.log(`您的东东农场互助码选择的是用换行隔开\n`)
+    console.log(`ff1e3ff271ba4fbc9f9d22190987fd9f@61c82397e0cf403eae5904e46a90514e@edf2baeca94e476496c6eb911a5b57b0@08eee59f433b473eb67779a0dd372ae1@bfb6f0ff95944b6ea4b6246b4bec5f69@d648bc21c62f40c1a406661b66ef664f@c041cad170774d169fa2c6af2c9ff2b8@b074877a6b864f8285d440ccc7f4aa75@1481d813072347f1af8c76a62f01642e@1a51b756f8f3473e922e68d6a412c459\n`)
     FruitShareCodes = process.env.FRUITSHARECODES.split('\n');
   } else {
     FruitShareCodes = process.env.FRUITSHARECODES.split();
